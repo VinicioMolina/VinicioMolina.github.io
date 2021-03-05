@@ -1,21 +1,23 @@
 <template>
-  <div >   
-
-      <h1>{{pokemon.name}}</h1>
-      <h3>Type</h3>
-      <p v-for="(value, index) in pokemon.types"
-        :key="'value'+index">
-        {{ value.type.name }} </p> 
-      <h3>Abilities</h3>
-      <p v-for="(value, index) in pokemon.abilities"
+  <div class="container-fluid">
+    <div class="row border">
+      <div class="col-lg-5  ">
+          <h1>{{pokemon.name}}</h1>
+          <h3>Type</h3>
+          <p v-for="(value, index) in pokemon.types"
             :key="'value'+index">
-            {{ value.ability.name }} </p> 
-        
-      <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + id + '.png'"  width="200" height="200" alt="">
+            {{ value.type.name }} </p> 
+          <h3>Abilities</h3>
+          <p v-for="(value, index) in pokemon.abilities"
+                :key="'value'+index">
+                {{ value.ability.name }} </p> 
+            
+          <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + id + '.png'"  width="200" height="200" alt="">
 
-      <button @click="Close"> Close</button>
+          <button @click="Close" class="btn btn-primary my-5"> Close</button>
+      </div>
+    </div>
   </div>
- 
 </template>
 
 <script>

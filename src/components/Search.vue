@@ -1,23 +1,25 @@
 <template>
-
-<p>You search for: {{pokemon_name}}</p>
-
-    
-    <div class="container"  >    
-      <h1>{{pokemon.name}}</h1>
-      <h3>Type</h3>
-      <p  v-for="(value, index) in pokemon.types"
-        :key="'value'+index">
-        {{ value.type.name }} </p> 
-      <h3>Abilities</h3>
-      <p v-for="(value, index) in pokemon.abilities"
+  <div class="container  d-flex justify-content-center">
+    <div>
+      <p>You search for: {{pokemon_name}}</p>
+      
+        <div class="container"  >    
+          <h1>{{pokemon.name}}</h1>
+          <h3>Type</h3>
+          <p  v-for="(value, index) in pokemon.types"
             :key="'value'+index">
-            {{ value.ability.name }} </p> 
-        
-      <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + pokemon.id + '.png'"  width="200" height="200" alt="">
+            {{ value.type.name }} </p> 
+          <h3>Abilities</h3>
+          <p v-for="(value, index) in pokemon.abilities"
+                :key="'value'+index">
+                {{ value.ability.name }} </p> 
+            
+          <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + pokemon.id + '.png'"  width="200" height="200" alt="">
 
-      <button v-on:click="Close"> Close</button>
+          <button v-on:click="Close" class="btn btn-primary"> Close</button>
+        </div>
     </div>
+  </div>   
 </template>
 
 <script>
@@ -66,9 +68,8 @@ export default {
      
       },
       Error404_Close(){
-        alert("We don't have Pokemon data with that name")
-        return this.$router.push('/')
-        
+        this.$router.push('/')
+        return alert("We don't have Pokemon data with that name")
       },
       Close(){
        this.$router.push('/')

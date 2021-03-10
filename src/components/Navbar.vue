@@ -1,14 +1,22 @@
 <template >
-    <nav class=" header navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-         <span class="navbar-brand mb-0 ">  <router-link to="/"><img src=".././assets/Images/pokedex_logo.png" alt=""  width="120" height="50"></router-link> </span>
-        <span class="mx-auto">
-            <input type="text" id="poke" class=""> 
-            <button class="btn btn-primary" @click="search_Pokemon"> 
+<nav class="navbar navbar-expand-lg   navbarA py-4 shadow-lg">
+  <router-link to="/"><img src=".././assets/Images/pokedex_logo.png" alt=""  width="120" height="50"></router-link>
+ 
+ 
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+  
+      <li class=" ml-5 nav-link shadow-sm">
+        <router-link class="text-light " to="/Docs" >Docs</router-link>
+      </li>
+
+    </ul>
+   <input type="text" id="poke" class=""> 
+            <button class="btn btn-outline-success my-2 my-sm-0 shadow-lg" @click="search_Pokemon"> 
                 Search
-            </button>  
-        </span>
-        <span class="  navbar-brand mb-0 h1 mx-auto">  <router-link to="/Docs">Docs</router-link> </span>
-    </nav>
+    </button>  
+  </div>
+</nav>
       
 </template>
 

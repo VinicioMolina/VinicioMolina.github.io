@@ -1,23 +1,21 @@
-<template>
-  <div class="container-fluid">
-    <div class="row border">
-      <div class="col-lg-5  ">
-          <h1>{{pokemon.name}}</h1>
-          <h3>Type</h3>
-          <p v-for="(value, index) in pokemon.types"
-            :key="'value'+index">
-            {{ value.type.name }} </p> 
-          <h3>Abilities</h3>
-          <p v-for="(value, index) in pokemon.abilities"
-                :key="'value'+index">
-                {{ value.ability.name }} </p> 
-            
-          <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + id + '.png'"  width="200" height="200" alt="">
+<template>   
 
-          <button @click="Close" class="btn btn-primary my-5"> Close</button>
-      </div>
+    <h1 class="">{{pokemon.name}}</h1>
+    <h3>Type:</h3>
+    <div class="row d-flex justify-content-center">
+      <div  class="col-4 border border-secondary types_border " v-for="(value, index) in pokemon.types" :key="'value'+index">
+        <p class="  mx-1 my-1">{{ value.type.name.toUpperCase() }} </p>
+        </div> 
     </div>
-  </div>
+    <h3>Abilities</h3>
+    <p v-for="(value, index) in pokemon.abilities"
+          :key="'value'+index">
+          {{ value.ability.name }} </p> 
+      
+    <img :src="'https://pokeres.bastionbot.org/images/pokemon/' + id + '.png'"  class=" " width="200" height="200" alt="">
+    <div class="d-flex justify-content-center">
+      <button @click="Close" class="btn btn-primary my-5"> Close</button>
+    </div>
 </template>
 
 <script>

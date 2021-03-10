@@ -1,0 +1,102 @@
+.card-color{
+    background-color:#a5d1ee;
+}
+.types_border{
+    border-radius: 25px;
+}
+.type_background{
+    
+    height: 50px;
+    width: 50px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.post{
+    border-style: solid;
+    border-width: 2px;
+    border-color: fffff;
+    border-radius: 40px;
+    -webkit-box-shadow: 23px 27px 34px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 23px 27px 34px -24px rgba(0,0,0,0.75);
+    box-shadow: 23px 27px 34px -24px rgba(0,0,0,0.75);
+    transition: transform .2s; /* Animation */
+}
+.post:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color:#ccdff5;
+    border-color: whitesmoke;
+  }
+.bg-cards{
+   
+    background-color: #a5d1eee1;
+}
+
+.navbarA{
+    background-color: #b3a125;
+    justify-content: center;
+
+
+    
+}
+.navbarA button{
+     background-color: #ffffff;
+}
+.navbarA li, ul{
+    color: whitesmoke;
+}
+.grass{
+    background-color: #78c850;
+
+}
+.fire{
+    background-color: #f08030;
+}
+.water{
+    background-color: #6890f0;
+}
+.bug{
+    background-color: #a8b820;
+}
+.normal{
+    background-color: #a8a878;
+}
+.poison{
+    background-color: #a040a0;
+}
+.electric{
+    background-color: #f8d030;
+}
+.ground{
+    background-color: #e0c068;
+}
+.fairy{
+    background-color: #ee99ac;
+}
+.fighting{
+    background-color: #c03028;
+}
+.psychic{
+    background-color: #f85888;
+}
+.rock{
+    background-color: #b8a038;
+}
+.ghost{
+    background-color: #705898;
+}
+.ice{
+    background-color: #98d8d8;
+}
+.dragon{
+    background-color: #7038f8;
+}
+.dark{ 
+    background-color: #705746
+}
+.steel{ 
+    background-color:#B7B7CE
+}
+.flying{ 
+    background-color: #A98FF3
+}

@@ -1,11 +1,11 @@
-<template>
-
+<template >
+<div class="container-all font-weight-bold">
           <Navbar/>
 
           <router-view />
 
  
- 
+</div> 
 </template>
 
 <script>
@@ -23,5 +23,11 @@ export default {
 </script>
 
 <style>
-
+  .container-all{
+    background:url("./assets/Images/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
 </style>

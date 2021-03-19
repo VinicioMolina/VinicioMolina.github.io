@@ -1,5 +1,5 @@
 <template >
-<nav class="navbar navbar-expand-lg   navbarA py-4 shadow-lg">
+<nav class="navbar navbar-expand-lg sticky-top navbarA py-4 shadow-lg">
   <router-link to="/"><img src=".././assets/Images/pokedex_logo.png" alt=""  width="120" height="50"></router-link>
  
  
@@ -13,7 +13,7 @@
     </ul>
    <input type="text" id="poke" class=""> 
             <button class="btn btn-outline-success my-2 my-sm-0 shadow-lg" @click="search_Pokemon"> 
-                Search
+                🔎
     </button>  
   </div>
 </nav>

@@ -82,7 +82,7 @@
                   pokemonType =data.types[0].type.name
                   pokemon.type=pokemonType
                   pokemon.id= data.id
-                   this.pokemons.push(pokemon);
+                  this.pokemons.push(pokemon);
                   // console.log("esto es dentro de then((data))" + this.pokemonType)     
                 })
 

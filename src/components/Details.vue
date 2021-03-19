@@ -4,8 +4,10 @@
     <h3>Type:</h3>
     <div class="row d-flex justify-content-center">
       <div  class="col-4 border border-secondary types_border " v-for="(value, index) in pokemon.types" :key="'value'+index">
-        <p class="  mx-1 my-1">{{ value.type.name.toUpperCase() }} </p>
-        </div> 
+          <div class="border" :class="pokemon.type.name" >
+          <p class="  mx-1 my-1" :class="pokemon.type.name" >{{ value.type.name.toUpperCase() }} </p>
+          </div>
+      </div> 
     </div>
     <h3>Abilities</h3>
     <p v-for="(value, index) in pokemon.abilities"

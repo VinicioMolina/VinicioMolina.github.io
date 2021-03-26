@@ -1,5 +1,5 @@
 <template >
-<div class="container-all font-weight-bold">
+<div class="container-all  font-weight-bold">
           <Navbar/>
 
           <router-view />
@@ -29,5 +29,14 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  @media only screen and (max-width: 600px) {
+  body {
+     background:url("./assets/Images/background2.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+}
   }
 </style>
